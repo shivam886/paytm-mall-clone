@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <style>
+        /* ---------------------------NAV ------------------ */
+#nav{
+    margin-top: 10px;
+    display: flex;
+   /* margin-top: 20px; */
+    width: 100%;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: whitesmoke;
+}
+#nav {
+  position: fixed;
+  top: 5%;
+  width: 100%;
+}
+
+#nav h3> img{
+    width: 25px;
+    padding-right: 10px;
+}
+/* #nav div:nth-child(2){
+    display: flex;
+    font-size:  20px;
+} */
+#nav h3{
+    /* align-items: ; */
+    width:  15%;
+    margin-top: 8px;
+    border: 1px solid rgb(212, 208, 208);
+    padding: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#searchnav > input:focus{
+    border: 0px;
+    width: 100%;
+    outline: none;
+}
+#searchnav > input {
+    width: 100%;
+    /* outline: none; */
+    background-color: whitesmoke;
+}
+ #searchnav  {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(212, 208, 208);
+    margin-left: 20px;
+   /* padding:11px; */
+   padding: 10px 0px 10px 0px;
+   border-radius: 4px;
+}
+#searchnav >img{
+    width: 30px;
+   padding-right: 10px;
+}
+.navleftside-login >a{
+    font-size: 12px;
+    font-family: poppins;
+    /* margin-left: 8px; */
+     padding-top: 12px;
+     color: black;
+     text-decoration: none;
+}
+    </style>
+</head>
+<body>
+      <!-- <div id="nav"> -->
+        <nav id="nav">
+            <h3 > <img src="/menu.png" alt=""> Shop By Category</h3>
+        <!-- <div>Shop By Category</div> -->
+        <div id="searchnav"><input style="border: none; font-size: 20px;margin-left: 15px;"  type="text" placeholder="Search for a Product, Brand  or Category"> <img src="/search.png" alt=""></div>
+    <!-- <div id="navleftside-login2"> -->
+        <div class="navleftside-login"> <img src="to-do-list.png" alt=""><a href="#">My orders</a></div>
+        <div class="navleftside-login"><img src="bag.png" alt=""><a href="/cart.html">Cart</a></div>
+        <div class="navleftside-login"><img src="user-profile.png" alt=""><a href="/login.html">Login</a><a href="./signup.html">Signup</a></div>
+</nav>
+</body>
+</html>

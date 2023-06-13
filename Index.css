@@ -1,0 +1,362 @@
+body{
+    margin: 0px;
+    height: 0px;
+}
+*{
+    font-family: poppins;
+}
+
+.logo img{
+    display: flex;
+    width: 8%;
+    margin: auto;
+    align-items: center;
+}
+
+/* .logo>img{
+    width: 100px;
+    margin-left: 700%;
+    text-align: center;
+    display: block;   
+} */
+/* ---------------------------NAV --------------------------------------------------------- */
+#nav{
+    margin-top: 10px;
+    display: flex;
+   /* margin-top: 20px; */
+    width: 100%;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: whitesmoke;
+}
+/* #nav {
+  position: fixed;
+  top: 5%;
+  width: 100%;
+} */
+
+#nav h3> img{
+    width: 25px;
+    padding-right: 10px;
+}
+/* #nav div:nth-child(2){
+    display: flex;
+    font-size:  20px;
+} */
+#nav h3{
+    /* align-items: ; */
+    width:  15%;
+    margin-top: 8px;
+    border: 1px solid rgb(212, 208, 208);
+    padding: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+#searchnav > input:focus{
+    border: 0px;
+    width: 100%;
+    outline: none;
+}
+#searchnav > input {
+    width: 100%;
+    /* outline: none; */
+    background-color: whitesmoke;
+}
+ #searchnav  {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    border: 1px solid rgb(212, 208, 208);
+    margin-left: 20px;
+   /* padding:11px; */
+   padding: 10px 0px 10px 0px;
+   border-radius: 4px;
+}
+#searchnav >img{
+    width: 30px;
+   padding-right: 10px;
+}
+.navleftside-login >a{
+    font-size: 12px;
+    font-family: poppins;
+    /* margin-left: 8px; */
+     padding-top: 12px;
+     color: black;
+     text-decoration: none;
+}
+/* to do start */
+
+.navleftside-login{
+    display: flex;
+   /* border: 2px solid; */
+   width: 10%;
+   margin-left: 20px;
+   /* align-items: center; */
+}
+.navleftside-login >p{
+   
+    margin-left: 20px;
+    font-size: 12px;
+    /* text-decoration: none; */
+    /* border: 2px solid rebeccapurple; */
+    font-family: poppins;
+    margin-left: 8px;
+    /* align-items: center; */
+}
+.navleftside-login >img{
+    /* border: 2px solid red; */
+    width: 25px;
+    /* height: 25px; */
+    margin-top: 7%;
+    /* padding-right: -30px; */
+}
+/* --------------------------------NAV ENDS---------------------------------------------- */
+
+
+/* ------------------Paragraph part-----------> */
+#para{
+    margin-top: 50px;
+    padding-left: 20px;
+}
+#para > h6{
+    color: rgb(0, 0, 0);
+    /* font-size: 15px; */
+}
+#para  p{
+    font-size: 12px;
+}
+#para  span{
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+/* <!-----------------------AFTER PARA SQUARE BLOCK ----------------------> */
+
+#heart-assurance{
+    display: flex;
+   text-align: center;
+}
+#heart-assurance > div{
+    margin-top: 40px;
+    margin-left: 20px;
+    width: 30%;
+
+}
+#heart-assurance  img{
+    width: 23px;
+    margin-bottom: 10px;
+}
+
+#heart-assurance  p{
+    margin-bottom: 10px;
+   color: rgb(96, 95, 95);
+   font-size: 15px;
+}
+#heart-assurance  h5{
+    margin-bottom: 10px;
+   color: rgb(96, 95, 95);
+   /* font-size: 15px; */
+}
+
+/* ---------------Apple------------ */
+#apple{
+    background-color: antiquewhite;
+}
+#apple > .left{
+    margin-left: 20px;
+}
+
+#apple > .left > a{
+    color: red;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+/* ---------------FOOTER ------------------- */
+.footer > h6{
+    margin-top: 20px;
+      padding-left: 30px;
+      color: black;
+}
+.footer-cont>ul{
+    display: flex;
+}
+
+/*------------------- footer with dropdown---------- */
+.menubar{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.menubar ul{
+    display: flex;
+    list-style: none;
+}
+.menubar ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menubar ul li a:hover{
+   color: #ef4e28;
+}
+/* <!------------------------Grocery & Home Furnishing------------------ --> */
+.carousel .carousel-cell{
+    text-align: center;
+   padding-left: 30px;
+}
+.carousel .carousel-cell > img{
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    /* margin-left: 30px; */
+}
+/* ---------------FOOTER ------------------- */
+.footer > h6{
+    margin-top: 20px;
+      padding-left: 30px;
+      color: black;
+}
+.footer-cont>ul{
+    display: flex;
+}
+
+/*------------------- footer with dropdown---------- */
+.menubar{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+.menubar ul{
+    display: flex;
+    list-style: none;
+}
+.menubar ul li{
+    display: flex;
+    list-style: none;
+    position: relative;
+}
+.menubar ul li a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    transform: all 0.3s ease;
+}
+.menubar ul li a:hover{
+   color: #ef4e28;
+}
+
+
+/* -----------------Footer dropdown inside-------------- */
+
+  
+  /* .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  } */
+  .menu-bar{
+    display: flex;
+  }
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    /* width: 120px; */
+    padding: 10px 30px;
+    /* text-align: center; */
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+    /* display: flex; */
+  }
+  .dropdown-menu ul li a{
+    /* display: flex; */
+    /* color: red; */
+    font-size: 15px;
+
+  }
+  .dropdown-menu ul li {
+/* border: 2px solid; */
+width: 100px;
+margin: auto;
+font-size: 15px;
+margin-left: 30px;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: whitesmoke;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    /* display: block; */
+    margin: 10px;
+  }
+  /* ------------------serach----------------- */
+  
+   #append{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* border: 2px solid ; */
+    gap: 20px;
+   }
+   #append  img{
+    width: 100%;
+    gap: 20px;
+   }
+   
+   #append .imgdiv {
+       /* border: 2px solid; */
+       width: 100%;
+       /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+   }
+   #append button{  
+    margin-left: 30%;
+    margin-bottom: 10px;
+background: linear-gradient(90deg, #0D47A1, #49a24e 35%, #1A237E 100%);
+   }
+   /* .imgdiv > description  */
+   

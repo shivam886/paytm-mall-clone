@@ -1,0 +1,135 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Sign up</title> 
+    <!-- <link rel="stylesheet" href="style/signup.css">  -->
+</head> 
+<style>
+    *{ 
+    margin:0; 
+    padding:0; 
+} 
+body{ 
+    background:#B2EBF2
+     
+      /* background-color: goldenrod;  */
+} 
+.hero{ 
+    height: 100%; 
+    width:100%; 
+    background-position: center; 
+    background-size: cover; 
+    position: absolute; 
+    /* background-color: black; */
+} 
+.form-box{ 
+    width:380px; 
+    height:480px; 
+    position:relative; 
+    margin:6% auto; 
+    background:white; 
+    padding:5px; 
+} 
+.btn-box{ 
+    width:220px; 
+    margin:35px auto; 
+    position:relative; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center; 
+} 
+.toggle-btn{ 
+    padding:10px 30px; 
+    cursor:pointer; 
+    background: transparent; 
+    border:0; 
+    outline:none; 
+    position:relative; 
+    
+} 
+.input-group{ 
+    top:110Px; 
+    position:absolute; 
+    width:280px; 
+    transition: .5s; 
+   margin-left: -35px; 
+} 
+#username{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#email{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#password{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#submit{ 
+    width:100%; 
+    border:none; 
+    margin-top:30px; 
+    font-size: 25px; 
+    background: linear-gradient(to right, #388E3C, #F9A825); 
+    /* background: #3949AB; */
+    border-radius: 30px; 
+}
+</style>
+<body> 
+    <div class="hero"> 
+        <div class="form-box"> 
+            <div class="btn-box"> 
+                <button type="button" class="toggle-btn">Register</button> 
+                <form action="" class="input-group"> 
+                    <input type="text" placeholder="username" id="username" required> 
+                    <input type="email" placeholder="email" id="email"required> 
+                    <input type="password" placeholder="password" id="password" required> 
+                    <input type="submit" value="Sign up" id="submit"> 
+                </form> 
+            </div> 
+        </div> 
+    </div> 
+    
+</body> 
+</html> 
+<script> 
+    let myform=document.querySelector("form"); 
+     
+    myform.addEventListener("submit",getdata); 
+ 
+    function getdata(){ 
+        event.preventDefault(); 
+        let storedata=JSON.parse(localStorage.getItem("credential"))||[]; 
+ 
+        let formobj={ 
+            username:myform.username.value, 
+            email:myform.email.value, 
+            password:myform.password.value 
+        } 
+        storedata.push(formobj); 
+        localStorage.setItem("credential",JSON.stringify(storedata)); 
+        alert("Successfully Registered ") 
+        window.location.href="./login.html"; 
+    } 
+    </script> 

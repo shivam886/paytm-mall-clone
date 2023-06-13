@@ -1,0 +1,145 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Login</title> 
+    <link rel="stylesheet" href="style/signup.css"> 
+    <a href="./signup.html"></a>
+    <!-- <a href="/index.html"></a> -->
+</head> 
+<style>
+    *{ 
+    margin:0; 
+    padding:0; 
+} 
+body{ 
+    background:rgb(131, 97, 142) 
+    
+     /* background-color: goldenrod; */
+} 
+.hero{ 
+    height: 100%; 
+    width:100%; 
+    background-position: center; 
+    background-size: cover; 
+    position: absolute; 
+} 
+.form-box{ 
+    width:380px; 
+    height:480px; 
+    position:relative; 
+    margin:6% auto; 
+    background:#fff; 
+    padding:5px; 
+} 
+.btn-box{ 
+    width:220px; 
+    margin:35px auto; 
+    position:relative; 
+    box-shadow:0 0 20px 9px #ff61241f; 
+    border-radius: 30px; 
+    text-align: center; 
+} 
+.toggle-btn{ 
+    padding:10px 30px; 
+    cursor:pointer; 
+    background: transparent; 
+    border:0; 
+    outline:none; 
+    position:relative; 
+    
+} 
+.input-group{ 
+    top:110Px; 
+    position:absolute; 
+    width:280px; 
+    transition: .5s; 
+   margin-left: -35px; 
+} 
+#username{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#email{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#password{ 
+    width:100%; 
+    padding:10px 0; 
+    margin:5px 0; 
+    border-left: 0; 
+    border-right: 0; 
+    border-top:0; 
+    border-bottom: 1px solid #999 ; 
+    background: transparent; 
+} 
+#submit{ 
+    width:100%; 
+    border:none; 
+    margin-top:30px; 
+    font-size: 25px; 
+    background: linear-gradient(to right, #ff105f, #ffad06); 
+    border-radius: 30px; 
+}
+</style>
+<body> 
+    <div class="hero"> 
+        <div class="form-box"> 
+            <div class="btn-box"> 
+                 
+                <form action="" class="input-group"> 
+                    <input type="text" placeholder="username" id="username"> 
+                     
+                    <input type="password" placeholder="password" id="password"> 
+                    <a href="/index.html"><input type="submit" value="Login" id="submit"> </a>
+                    <!-- <input type="submit" value="Login" id="submit">  -->
+                </form> 
+            </div> 
+        </div> 
+    </div> 
+</body> 
+<script> 
+    let getdata=JSON.parse(localStorage.getItem("credential")); 
+    console.log(getdata); 
+
+    let form=document.querySelector("form"); 
+    form.addEventListener("submit" ,getData) 
+    function getData() 
+    { 
+        event.preventDefault(); 
+        let obj={ 
+            name1:form.username.value, 
+            password1:form.password.value, 
+        } 
+        let count=0; 
+        for (let i=0;i<getdata.length;i++){ 
+                if(getdata[i].username==obj.name1 || getdata[i].password==obj.password1) 
+            { 
+                count++; 
+                alert("Login Sucessfull"); 
+                window.location.href="./index.html"; 
+         
+            } 
+        }
+        if (count==1){ 
+            alert("wrong creadential") 
+        } 
+ 
+        }
+        </script> 
+        </html> 
